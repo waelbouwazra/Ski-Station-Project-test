@@ -18,6 +18,16 @@
         <sonar.java.binaries>target/classes</sonar.java.binaries>
         <sonar.exclusions>**/*.java</sonar.exclusions>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://192.168.33.10:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://192.168.33.10:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
